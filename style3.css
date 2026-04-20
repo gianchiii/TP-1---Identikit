@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&family=Shadows+Into+Light&family=UnifrakturMaguntia&display=swap');
+
+h1, h2, h4, p {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    background-image: url('imgs/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: "Lato", sans-serif;
+}
+
+#nav {
+    text-align: center;
+    padding: 20px 0;
+    background: transparent;
+}
+
+#nav li {
+    display: inline;
+    margin: 0 12px;
+}
+
+#nav a {
+    color: #ffcccc;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 10px 16px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    opacity: 0.8;
+}
+
+#nav a:hover {
+    color: #ff6666;
+    opacity: 1;
+}
+
+#nav a.active {
+    color: #ff4444;
+    opacity: 1;
+}

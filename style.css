@@ -1,0 +1,21 @@
+        #parrafos {
+    color:#f8f9fa;
+        }
+        h1 {
+    color: #f8f9fa; background-image: url(imgs/degradado.jpg); border: 2.6px solid black
+        }
+        p {
+    color: #f8f9fa; background-image: url(imgs/degradado.jpg); border: 2.6px solid black
+        }
+        blockquote {
+    color: #f8f9fa
+        }
+        h2 {
+    color: #f8f9fa; background-image: url(imgs/degradado.jpg); border: 2.6px solid black
+        }
+         body {
+    background-image: url(imgs/bg.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+        }

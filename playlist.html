@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../imgs/favicon.png" type="image/png">
+    <link rel="stylesheet" href="../style3.css">
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <ul id="nav">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="sobre-mi.html">Sobre mí</a></li>
+        <li><a href="tabla.html">Tabla</a></li>
+        <li><a href="trivia/index.html">Trivia</a></li>
+        <li><a href="playlist.html" style="background-color: #555;">Playlist</a></li>
+    </ul>
+
+    <center>
+    <section style="border: 1px solid black; padding: 20px; text-align: left;"> 
+        <h1 style="color: white; text-align: center;">Mis Canciones Favoritas</h1>
+
+
+        <div class="playlist-container">
+                
+
+        <div class="song-list-column">
+        <h2 style="color: white;"><center>Lista</center></h2>
+        <ul class="song-list">
+
+        <li data-video-id="B9synWjqBn8">1. FE!N - Travis Scott</li>
+        <li data-video-id="04854XqcfCY">2. We are the Champions - Queen</li>
+        <li data-video-id="5M_n2UCe7DQ">3. 444 - Yan Block</li>
+        <li data-video-id="_r-nPqWGG6c">4. No idea - Don Toliver</li>
+        <li data-video-id="A5mURRozXtg">5. No pole - Don Toliver</li>
+        </ul>
+        </div>
+        <div class="video-column">
+        <div class="video-container">
+        <h2 style="color: white;">Video Musical</h2>
+                        
+        <iframe 
+            id="video-player" 
+            class="video-player"
+            src="https://www.youtube.com/embed/B9synWjqBn8" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+            </iframe>
+            </div>
+            </div>
+
+            </div>
+        </section>
+    </center>
+    <script>
+      
+     document.addEventListener('DOMContentLoaded', function() {
+            
+            
+            const songItems = document.querySelectorAll('.song-list li');
+            
+          
+            const videoPlayer = document.getElementById('video-player');
+
+   
+            songItems.forEach(item => {
+
+                item.addEventListener('click', function() {
+                 
+                    const videoId = this.getAttribute('data-video-id');
+                    
+                    
+                    const newSrc = `https://www.youtube.com/embed/${videoId}`;
+                    
+                    
+                    videoPlayer.src = newSrc;
+                });
+            });
+        });
+    </script>
+    <footer><center>&copy; 2026 Identikit. Todos los derechos reservados.</center></footer>
+</body>
+</html>

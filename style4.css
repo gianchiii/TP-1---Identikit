@@ -1,0 +1,57 @@
+        body {
+            background-image: url(imgs/bg.jpg);
+            color: #800e13;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        .jugador-table {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            border: 2.6px solid black;
+            background-color: #800e13;
+            color: #800e13;
+            border-collapse: collapse;
+            box-shadow: 0 0 15px rgba(0,0,0,0.7);
+        }
+        .jugador-table th, .jugador-table td {
+            border: 1px solid black;
+            padding: 15px;
+            text-align: center;
+            color: white
+        }
+        .jugador-table th {
+            background-color: #5a0a0f;
+            font-size: 1.4em;
+        }
+        .jugador-table img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+            margin: 5px;
+        }
+        .jugador-card {
+            display: inline-block;
+            width: 30%;
+            vertical-align: top;
+            margin: 10px;
+        }
+        .jugador-card img {
+            max-width: 100%;
+            height: auto;
+        }
+        .separador {
+            margin: 20px auto;
+            display: block;
+        }

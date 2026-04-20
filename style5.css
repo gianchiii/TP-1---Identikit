@@ -1,0 +1,59 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+        }
+
+        h1, h2, h4, p {
+            color: white;
+        }
+
+        
+        .playlist-container {
+            display: flex; 
+            width: 100%;
+            max-width: 1200px; 
+        }
+
+   
+        .song-list-column {
+            flex: 1; 
+            padding-right: 20px; 
+        }
+
+        .song-list {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .song-list li {
+            background-color: #333;
+            margin-bottom: 8px; 
+            padding: 15px;
+            border-left: 5px solid #c0392b; 
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .song-list li:hover {
+            background-color: #555;
+        }
+
+     
+        .video-column {
+            flex: 1.5; 
+        }
+        .video-container {
+            text-align: center;
+        }
+
+        .video-player {
+            width: 100%;
+            height: 315px; 
+            background-color: #000;
+            border: 1px solid #555;
+        }
